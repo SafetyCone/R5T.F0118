@@ -10,9 +10,6 @@ namespace R5T.F0118
     [FunctionalityMarker]
     public partial interface IInstancesOperator : IFunctionalityMarker
     {
-        //public InstanceDescriptor[] Filter_Instances(
-        //    )
-
         public AssemblyInstancesDescriptor Get_Instances()
         {
             var instancesFilePath = Instances.FilePaths.Instances;
