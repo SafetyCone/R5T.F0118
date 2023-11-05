@@ -4,6 +4,8 @@ using R5T.F0109;
 using R5T.T0132;
 using R5T.T0170;
 
+using InstanceDescriptor = R5T.T0170.InstanceDescriptor;
+
 
 namespace R5T.F0118
 {
