@@ -14,7 +14,7 @@ namespace R5T.F0118
         public IJsonFilePath Get_InstancesFilePath(
             IDirectoryPath parentDirectoryPath)
         {
-            var output = Instances.PathOperator.GetFilePath(
+            var output = Instances.PathOperator.Get_FilePath(
                 parentDirectoryPath.Value,
                 Instances.FileNames.Instances.Value)
                 .ToJsonFilePath();
