@@ -11,6 +11,9 @@ namespace R5T.F0118
     [FunctionalityMarker]
     public partial interface IFilePathOperator : IFunctionalityMarker
     {
+        /// <summary>
+        /// Gets the file path of the <inheritdoc cref="F0118.IFileNames.Instances" path="descendant::value"/> file in the given directory.
+        /// </summary>
         public IJsonFilePath Get_InstancesFilePath(
             IDirectoryPath parentDirectoryPath)
         {
@@ -22,10 +25,14 @@ namespace R5T.F0118
             return output;
         }
 
+        /// <summary>
+        /// Gets the instance file path:
+        /// <para><value><inheritdoc cref="Z0026.IDirectoryPaths.CloudSharedDataDirectoryPath" path="descendant::value"/><inheritdoc cref="F0118.IFileNames.Instances" path="descendant::value"/></value></para>
+        /// </summary>
         public IJsonFilePath Get_InstancesFilePath()
         {
             return this.Get_InstancesFilePath(
-                Instances.DirectoryPaths.CloudSharedData);
+                Instances.DirectoryPaths.CloudSharedDataDirectoryPath);
         }
     }
 }

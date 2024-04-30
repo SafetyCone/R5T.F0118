@@ -10,6 +10,9 @@ namespace R5T.F0118
     [ValuesMarker]
     public partial interface IFileNames : IValuesMarker
     {
+        /// <summary>
+        /// <para><value>Instances.json</value></para>
+        /// </summary>
         public IFileName Instances => "Instances.json".ToFileName();
     }
 }
